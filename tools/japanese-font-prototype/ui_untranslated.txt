@@ -1,0 +1,249 @@
+
+  
+    
+    :
+  :
+ ^7Custom:
+# 
+%Inc ES from Tree
+%Inc ES from Tree:
+-- Select Metric --
+-- Select Metric --:
+...
+...:
+:
+<No skills added yet>
+<No skills added yet>:
+Absolution: Count skill damage once
+Absolution: Count skill damage once:
+Acolyte's Unravelling:
+Ahuana (Immortal Ambition)
+Ahuana (Immortal Ambition):
+Akoya (Chainbreaker)
+Akoya (Chainbreaker):
+Ancestral Call
+Ancestral Call:
+Ancestral Cry
+Ancestral Cry:
+Arcane Cloak:
+Are you animating Lingering Blades?:
+Are you in Demon Form?:
+Are you in Her Embrace?:
+Are you in a Bloodstorm?:
+Are you in a Sandstorm?:
+Are you in dodge roll?:
+Are you on Caustic Ground?:
+Are you on Consecrated Ground?:
+Are you on Fungal Ground?:
+Are you surrounded?:
+Asenath (Dance with Death)
+Asenath (Dance with Death):
+Aspect of the Avian:
+Aspect of the Cat:
+Aspect of the Crab:
+Aspect of the Spider:
+Augyre rotating buff:
+Avarius (Power of Purpose)
+Avarius (Power of Purpose):
+Balbala (The Traitor)
+Balbala (The Traitor):
+Barkskin:
+Battlemage's Cry
+Battlemage's Cry:
+Blade Vortex blade count:
+Bladestorm:
+Blood Sacrament:
+Bounces Count
+Bounces Count:
+Brutal Restraint
+Brutal Restraint:
+Cadiro (Supreme Decadence)
+Cadiro (Supreme Decadence):
+Carrion Golem:
+Caspiro (Supreme Ostentation)
+Caspiro (Supreme Ostentation):
+Changed Stance in the last 1s?
+Changed Stance in the last 1s?:
+Clash Support:
+Combo:
+Consecrated Path of Endurance:
+Corrupting Cry:
+Cruelty:
+Culling Strike
+Culling Strike:
+Cyclone:
+Dark Pact:
+Defiance:
+Demon Form:
+Desecrated
+Desecrated:
+Did you ^x3F6DB3Chill ^7yourself?:
+Do you have Alchemist's Genius?:
+Do you have Arcane Surge?:
+Do you have Chaotic Might?:
+Do you have Convergence?:
+Do you have Divinity?:
+Do you have Everlasting Sacrifice?:
+Do you have Fanaticism?:
+Do you have Iron Reflexes?:
+Do you have Phasing?:
+Do you have Quicksand Hourglass?:
+Do you have Unholy Might?:
+Do you use Ghost Shrouds?:
+Do you wait for Max Seals?:
+Do your minions have Chaotic Might?:
+Do your minions have Unholy Might?:
+DoT DPS
+DoT DPS:
+Dominus (Inner Conviction)
+Dominus (Inner Conviction):
+Doom Blast:
+Doom on Hex:
+Eldritch Empowerment:
+Elegant Hubris
+Elegant Hubris:
+Embrace Madness:
+Enter name for this passive tree:
+Enter passive tree link:
+Flame Wall:
+Flicker Strike:
+Fork Count
+Fork Count:
+Fresh Meat:
+Frost Shield
+Frost Shield:
+Glorious Vanity
+Glorious Vanity:
+Greater Harbinger of Time:
+Harbinger of Time:
+Has Ravenous consumed a corpse?:
+Have you Killed in the last 3 Seconds?:
+Herald of Agony:
+Herald of Ash:
+Hex:
+How many spells cast in the last 8 seconds?:
+Ice Nova:
+Ignore Jewel Limits
+Incision Support:
+Infernal Cry
+Infernal Cry:
+Infusion:
+Intensify:
+Intimidating Cry
+Intimidating Cry:
+Into the Breach:
+Is a Companion in your Presence?:
+Is the Bleed Aggravated?:
+Is the skill Empowered?:
+Lethal Pride
+Lethal Pride:
+Max Chain Count
+Max Chain Count:
+Maxarius (Transcendence)
+Maxarius (Transcendence):
+Meat Shield:
+Militant Faith
+Militant Faith:
+Molten Shell:
+Momentum:
+Multi-part area skills:
+Nasima (Second Sight)
+Nasima (Second Sight):
+Overkill damage:
+Parry:
+Passive tree link:
+Perforate:
+Pierce Count
+Pierce Count:
+Plague Bearer:
+PoE2
+PoE2:
+Predator:
+Pride:
+Primalist
+Primalist:
+Proj, Split Count
+Proj, Split Count:
+Projectile Count
+Projectile Count:
+Projectile Travelled through?
+Projectile Travelled through?:
+Purple Flames collected:
+Raise Spectre:
+Raise Spiders:
+Raise Zombie:
+Rakiata (Tempered by War)
+Rakiata (Tempered by War):
+Rallying Cry
+Rallying Cry:
+Rising Tempest:
+Scavenged Plating:
+Seconds building Stoicism:
+Seismic Cry
+Seismic Cry:
+Shrapnel Ballista:
+Sigil of Power:
+Spear older than 0.5s?
+Spear older than 0.5s?:
+Spearfield:
+Spectral Wolf:
+Stages:
+Stance:
+State:
+Steel Shards consumed:
+Steel Wards:
+Stoicism:
+Storm Rain of the Conduit:
+Storm Rain:
+Summon Companion:
+Summon Holy Relic:
+Summon Reaper:
+Summoned Golem in past 10 Seconds?:
+Summoned Golem in past 8 Seconds?:
+Summoned Spectre in past 8 Seconds?:
+Summoned Zombie in past 8 Seconds?:
+Thirst for Blood:
+Tornado Shot:
+Toxic Rain:
+Trauma:
+Trinity:
+Twister:
+Unhinge:
+Unwilling Offering:
+Vaal Molten Shell:
+Victario (Supreme Grandstanding)
+Victario (Supreme Grandstanding):
+Vigilant Strike:
+Voltaxic Burst:
+Vortex:
+Warden
+Warden:
+Warlock
+Warlock:
+Whirlwind Stages:
+Wind Dancer:
+Xibaqua (Divine Flesh)
+Xibaqua (Divine Flesh):
+\n
+\n:
+^1
+^1:
+^1Error fetching league list, default league will be used\n
+^1Error fetching league list, default league will be used\n:
+^1Nothing^7
+^1Nothing^7:
+^4Fallback Nodes
+^4Fallback Nodes:
+^7
+^7---------------------------
+^7---------------------------:
+^7---------------------------\n
+^7---------------------------\n:
+^7:
+^7Fallback Nodes
+^7Fallback Nodes:
+^7Required
+^7Required:
+^7Secondary Node Weight:
+^9Secondary Node Weight:
+^x88FFFFES ^7Recharge started past 2 seconds?:

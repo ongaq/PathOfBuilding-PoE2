@@ -1,0 +1,614 @@
+# Carrion Golem = # Chaos Golem:
+# Chaos Golem = # Stone Golem:
+# Stone Golem = # Carrion Golem:
+# bolts reloaded past 6 seconds
+# bolts reloaded past 8 seconds
+# different Ammo Types Shot past 10s
+# different Grenade Types Shot past 10s
+# of Active Arrows:
+# of Active Spectral Wolves:
+# of Barkskin Stacks:
+# of Bleeds on enemy (if not average):
+# of Blitz Charges (if not maximum):
+# of Blood Charges (if not maximum):
+# of Brands attached to the enemy:
+# of Broken Armour (if not maximum):
+# of Casts currently waiting:
+# of Challenger Charges (if not maximum):
+# of Corpses Consumed Recently:
+# of Corrosion Stacks:
+# of Corrupted Blood stacks:
+# of Crab Barriers (if not maximum):
+# of Endurance Charges (if not maximum):
+# of Endurance Charges lost Recently:
+# of Enemies Killed Recently:
+# of Enemies Killed by Minions Recently:
+# of Enemies Killed by Totems Recently:
+# of Enemies affected:
+# of Ensnare Stacks:
+# of Fortification Stacks (if not maximum):
+# of Fragile Regrowth Stacks:
+# of Frenzy Charges (if not maximum):
+# of Ghost Shrouds (if not maximum):
+# of Grasping Vines affecting enemy:
+# of Hazards triggered recently:
+# of Hits Suppressed Recently:
+# of Impales on enemy (if not maximum):
+# of Incision Stacks:
+# of Incisions consumed recently:
+# of Inspiration Charges (if not maximum):
+# of Intensity:
+# of Mines Detonated Recently:
+# of Mines per throw:
+# of Minions in your Presence:
+# of Nearby Allies:
+# of Nearby Bleeding Enemies:
+# of Nearby Corpses:
+# of Nearby Non-Golem Minions:
+# of Non-Instant Spells Cast Recently:
+# of Non-^xADAA47Shocked ^7Enemies ^xADAA47Shocked ^7 Recently:
+# of Overlapping Beams:
+# of Overlapping Pods:
+# of Overlapping Spikes:
+# of Poison on You:
+# of Poisons applied Recently:
+# of Poisons on enemy (if not average):
+# of Power Charges (if not maximum):
+# of Rampage Kills:
+# of Recently Applied Ailments:
+# of Rupture stacks?
+# of Scavenged Plating Stacks:
+# of Shotgunning Projectiles:
+# of Siphoning Charges (if not maximum):
+# of Skills Used Recently:
+# of Soul Eater Stacks:
+# of Spider's Web Stacks:
+# of Spiders:
+# of Spirit Charges:
+# of Summoned Minions (if not maximum):
+# of Summoned Totems (if not maximum):
+# of Tailwind Stacks:
+# of Traps Triggered Recently:
+# of Traps per throw:
+# of Trauma Stacks:
+# of Virulence Stacks:
+# of Warcries Used Recently:
+# of Whirlwind Stages:
+# of Wind Dancer Stacks:
+# of Withered Stacks on you:
+# of Withered Stacks:
+# of ^x3F6DB3Freeze ^7/ ^xADAA47Shock ^7/ ^xB97123Ignite ^7on enemy:
+# of ^x7070FFMana ^7spent Recently:
+# of ^xADAA47Shocked ^7Enemies Killed Recently:
+# of ^xB97123Ignites ^7applied Recently:
+# of ^xB97123Ignites^7 on enemy (if not average):
+# of ^xE05030Life ^7spent Recently:
+# of ^xE05030Life ^7spent in past 8s:
+# of active Brands:
+# of linked Targets:
+# of nearby Enemies:
+# of nearby Rare or Unique Enemies:
+# of seconds Affected by a Warcry Buff:
+# of seconds since Inevitable Crit:
+# of times Skill has Chained:
+# of times Skill has Forked:
+# of times Skill has Pierced:
+# of times Stunned Recently:
+# of times you have been Hit Recently:
+#% of Curse Expired on enemy:
+% Wave of Conviction duration expired:
+% chance for second proj to hit:
+Absolution: Count skill damage once
+Acolyte's Unravelling:
+Ailment calculation mode:
+Amount of ^xFF9922Rage ^7Sacrificed (if not maximum):
+Arcane Cloak:
+Are you Bleeding?
+Are you Blinded?
+Are you Channelling Cyclone?
+Are you Channelling?
+Are you Elusive?
+Are you Focused?
+Are you Fortified?
+Are you Immune to Curses?
+Are you Insane?
+Are you Leeching ^x7070FFMana?
+Are you Leeching ^x88FFFFEnergy Shield?
+Are you Leeching ^xE05030Life?
+Are you Leeching?
+Are you Poisoned?
+Are you Sacrificing?
+Are you Sprinting?
+Are you Unbound?
+Are you ^x3F6DB3Brittle?
+Are you ^x3F6DB3Chilled?
+Are you ^x3F6DB3Frozen?
+Are you ^xADAA47Sapped?
+Are you ^xADAA47Shocked?
+Are you ^xB97123Burning?
+Are you ^xB97123Ignited?
+Are you ^xB97123Scorched?
+Are you always moving?
+Are you always on Full ^x7070FFMana?
+Are you always on Full ^x88FFFFEnergy Shield?
+Are you always on Full ^xE05030Life?
+Are you always on Low ^x7070FFMana?
+Are you always on Low ^x88FFFFEnergy Shield?
+Are you always on Low ^xE05030Life?
+Are you animating Lingering Blades?
+Are you in Demon Form?
+Are you in Her Embrace?
+Are you in a Bloodstorm?
+Are you in a Sandstorm?
+Are you in dodge roll?
+Are you on Caustic Ground?
+Are you on Consecrated Ground?
+Are you on Fungal Ground?
+Are you on ^x3F6DB3Chilled ^7Ground?
+Are you on ^xADAA47Shocked ^7Ground?
+Are you on ^xB97123Burning ^7Ground?
+Are you on ^xB97123Ignited ^7Ground?
+Are you out of Life Flask uses?
+Are you surrounded?
+Are your Minions always on Full ^xE05030Life?
+Armour calculation mode:
+Aspect of the Avian:
+Aspect of the Cat:
+Aspect of the Crab:
+Aspect of the Spider:
+Augyre rotating buff:
+Average
+Banner Skills:
+Banner Valour:
+Barkskin:
+Blade Vortex blade count:
+Bladestorm:
+Blocked a Hit from a Unique enemy in the past 10s?
+Blood Sacrament:
+Boosted calc mode:
+Boss Skill Preset
+Brand Skills:
+Bypass CD?
+Carrion Golem:
+Cast on Frostbolt?
+Chance To Ignore PDR Mode:
+Changed Stance in the last 1s?
+Changed Stance recently?
+Channeling for # seconds:
+Clash Support:
+Cold
+Cold Skill used Recently:
+Cold Snap:
+Combo:
+Conflux Buff:
+Consecrated Path of Endurance:
+Consumed 12 Steel Shards Recently?
+Consumed Freeze
+Consumed Ignite
+Consumed Shock
+Consumed a corpse Recently?
+Consumed a corpse in the past 2s?
+Consumed an Ailment?
+Cooldown calculation mode:
+Corrupting Cry:
+Count Skill Reservation towards eHP?
+Critical weakness stacks:
+Cruelty:
+Current ^x7070FFMana^7 %:
+Current ^x88FFFFEnergy Shield^7 percentage:
+Currently Shapeshifted?
+Curse Duration Expired on enemy:
+Curse overlaps:
+Custom PvP Damage multiplier percent:
+Cyclone:
+Damage % (if not maximum):
+Damage mitigated:
+Dark Pact:
+Defiance:
+Delirious Effect:
+Demon Form:
+Demonflame Stacks
+Did you ^x3F6DB3Chill ^7yourself?
+Disable EHP gain on block/suppress:
+Disable Emperor's Vigilance Bypass
+Disable Slashing Horror's Enrage:
+Distance to enemy:
+Do you always have ^x88FFFFEnergy Shield?
+Do you have Adrenaline?
+Do you have Alchemist's Genius?
+Do you have Arcane Surge?
+Do you have Avatar Of Fire?
+Do you have Chaotic Might?
+Do you have Convergence?
+Do you have Divinity?
+Do you have Everlasting Sacrifice?
+Do you have Fanaticism?
+Do you have Iron Reflexes?
+Do you have Lifetap?
+Do you have Manastorm's Buff?
+Do you have Onslaught?
+Do you have Phasing?
+Do you have Quicksand Hourglass?
+Do you have Soul Gain Prevention?
+Do you have Unholy Might?
+Do you have Vaal Arc's Lucky Buff?
+Do you have a Charm active?
+Do you have a Flask active?
+Do you have a Totem summoned?
+Do you use Blitz Charges?
+Do you use Challenger Charges?
+Do you use Endurance Charges?
+Do you use Frenzy Charges?
+Do you use Ghost Shrouds?
+Do you use Power Charges?
+Do you use Siphoning Charges?
+Do you wait for Max Seals?
+Do your Minions use Endur. Charges?
+Do your Minions use Frenzy Charges?
+Do your Minions use Power Charges?
+Do your hits always Heavy Stun?
+Do your hits always Stun?
+Do your minions have Chaotic Might?
+Do your minions have Onslaught?
+Do your minions have Unholy Might?
+Does enemy have Open Weakness?
+Does the enemy have ^x88FFFFEnergy Shield^7?
+Don't disable items
+Doom Blast Trigger Source:
+Doom Blast:
+Doom on Hex:
+Drain Ailments:
+EHP calc unlucky:
+Effect of Blind (if not maximum):
+Effect of Elusive (if not average):
+Effect of ^x3F6DB3Brittle:
+Effect of ^x3F6DB3Chill:
+Effect of ^xADAA47Sap:
+Effect of ^xADAA47Shock^7 (if not maximum):
+Effect of ^xB97123Scorched:
+Eldritch Empowerment:
+Elemental Conflux Element:
+Elemental Discharge:
+Elemental Resistance penalty:
+Embrace Madness:
+Enable Anger Aura:
+Enable Hatred Aura:
+Enable Holy Relic's Boon Aura:
+Enable Summoned Ursa's Rallying Cry:
+Enable Wrath Aura:
+Enable buffs:
+Enable curses:
+Enemy Base Armour:
+Enemy Base ^x33FF77Evasion:
+Enemy Block Chance:
+Enemy Corpse ^xE05030Life:
+Enemy Damage Type:
+Enemy Level:
+Enemy Max Resistance is always 75%
+Enemy Open Weakness Presence?
+Enemy Phys. Damage Reduction:
+Enemy Skill Physical Damage:
+Enemy Skill Physical Overwhelm:
+Enemy Skill Roll Range %:
+Enemy Skill ^x3F6DB3Cold Damage:
+Enemy Skill ^x3F6DB3Cold Pen:
+Enemy Skill ^xADAA47Lightning Damage:
+Enemy Skill ^xADAA47Lightning Pen:
+Enemy Skill ^xB97123Fire Damage:
+Enemy Skill ^xB97123Fire Pen:
+Enemy Skill ^xD02090Chaos Damage:
+Enemy ^x3F6DB3Cold Resistance:
+Enemy ^xADAA47Lightning Resistance:
+Enemy ^xB97123Fire Resistance:
+Enemy ^xD02090Chaos Resistance:
+Enemy ^xE05030Life ^7% higher than Player?
+Enemy affected by Hazard recently?
+Enemy attack / cast time in ms:
+Enemy critical strike chance:
+Enemy critical strike multiplier:
+Enemy entered Presence Recently?
+Enemy exited Presence Recently?
+Enemy has Parry Debuff
+Enemy hit you with ^x3F6DB3Cold Damage^7?
+Enemy hit you with ^xADAA47Light. Damage^7?
+Enemy hit you with ^xB97123Fire Damage^7?
+Enemy in Your Presence Duration
+Enemy radius:
+Enemy size preset:
+Enemy was Hit by ^x3F6DB3Cold ^7Damage?
+Enemy was Hit by ^xADAA47Light. ^7Damage?
+Enemy was Hit by ^xB97123Fire ^7Damage?
+Fire
+Fire Skill used Recently:
+Flame Wall:
+Flicker Strike:
+Fresh Meat:
+Frost Shield:
+Gained a Frenzy Charge Recently?
+Gained a Power Charge Recently?
+Gamblesprint Movement Speed
+Glorious Madness Stacks
+Greater Harbinger of Time:
+Harbinger of Time:
+Has Ravenous consumed a corpse?
+Has a Minion Died Recently?
+Have you Active Blocked Recently?
+Have you Attacked Recently?
+Have you Blocked Recently?
+Have you Blocked a Spell Recently?
+Have you Blocked an Attack Recently?
+Have you Cast a Spell Recently?
+Have you Cast a Spell in the last second?
+Have you Crit Recently?
+Have you Crit in the past 8s?
+Have you Cursed an enemy Recently?
+Have you Detonated a Mine Recently
+Have you Dodge Rolled Recently?
+Have you Hit Recently with Your Weapon?
+Have you Hit Recently?
+Have you Hit with a Proj. Att. Recently?
+Have you Hit with a Spell Recently?
+Have you Killed Recently?
+Have you Killed in the last 3 Seconds?
+Have you Linked recently?
+Have you Melee Hit Recently?
+Have you Parried Recently?
+Have you Pinned an enemy Recently?
+Have you Reloaded Recently?
+Have you Stunned an enemy Recently?
+Have you Summoned a Totem Recently?
+Have you Suppressed Recently?
+Have you Triggered a Trap Recently?
+Have you Triggered a skill Recently?
+Have you ^x3F6DB3Chilled ^7an enemy Recently?
+Have you ^x3F6DB3Frozen ^7an enemy Recently?
+Have you ^x3F6DB3Shattered ^7an enemy Recently?
+Have you ^xADAA47Shocked ^7an enemy Recently?
+Have you ^xB97123Ignited ^7an enemy Recently?
+Have you been Crit Recently?
+Have you been Hit Recently?
+Have you been Hit by an Attack Recently?
+Have you been Stunned Recently?
+Have you been hit by ^x3F6DB3Cold ^7Recently?
+Have you been hit by ^xADAA47Light. ^7Recently?
+Have you been hit by ^xB97123Fire ^7Recently?
+Have you cast Dash Recently?
+Have you dealt a Non-Crit Recently?
+Have you stopped taking DoT recently?
+Have you taken Spell Damage Recently?
+Have you taken a Savage Hit Recently?
+Have you thrown a Trap or Mine Recently?
+Have you used a Brand Skill recently?
+Have you used a Mark Recently?
+Have you used a Minion Skill Recently?
+Have you used a Movement Skill Recently?
+Have you used a Skill Recently?
+Have you used a Travel Skill Recently?
+Have you used a Vaal Skill Recently?
+Have you used a Warcry Recently?
+Have you used a ^x3F6DB3Cold ^7Skill Recently?
+Have you used a ^xB97123Fire ^7Skill Recently?
+Have your Herald Skills Crit Recently?
+Have your Minions Killed Recently?
+Have your Minions been created Recently?
+Have your Skills Crit Recently?
+Have your Totems Hit Recently?
+Have your Totems Hit with a Spell Recently?
+Have your Totems Killed Recently?
+Heartstopper Mode:
+Herald of Agony:
+Herald of Ash:
+Hex:
+Highest damage type Override:
+How many spells cast in the last 8 seconds?
+Ice Nova:
+Ignore Jewel Limits
+Ignore Skill Hit Damage?
+Impaled an enemy recently?
+Incision Support:
+Include in ^x7070FFMana ^7spent Recently?
+Inexorable Critical Support:
+Infusion consumed recently?
+Infusion:
+Intensify:
+Into the Breach:
+Is Avian's Flight active?
+Is Avian's Might active?
+Is Banner Planted?
+Is Bastion of Hope active?
+Is Cat's Agility active?
+Is Cat's Stealth active?
+Is Champion's Intimidate active?
+Is Embrace Madness active?
+Is Fresh Meat active?
+Is Infusion active?
+Is Magmatic Strikes active?
+Is Pendulum of Destruction active?
+Is Physical Aegis depleted?
+Is Slipstream active?:
+Is a Companion in your Presence?
+Is enemy Armour Broken?
+Is the Bleed Aggravated?
+Is the enemy Bleeding?
+Is the enemy Blinded?
+Is the enemy Critically Weak
+Is the enemy Crushed?
+Is the enemy Cursed?
+Is the enemy Dazed?
+Is the enemy Debilitated?
+Is the enemy Exposed to ^x3F6DB3Cold?
+Is the enemy Exposed to ^xADAA47Lightning?
+Is the enemy Exposed to ^xB97123Fire?
+Is the enemy Heavy Stunned?
+Is the enemy Hindered?
+Is the enemy Immobilised?
+Is the enemy Intimidated?
+Is the enemy Maimed?
+Is the enemy Moving?
+Is the enemy Pacified?
+Is the enemy Pinned?
+Is the enemy Poisoned?
+Is the enemy Rare?
+Is the enemy Stunned?
+Is the enemy Taunted?
+Is the enemy Unnerved?
+Is the enemy ^x3F6DB3Brittle?
+Is the enemy ^x3F6DB3Chilled ^7by your Hits?
+Is the enemy ^x3F6DB3Chilled?
+Is the enemy ^x3F6DB3Frozen?
+Is the enemy ^xADAA47Electrocuted?
+Is the enemy ^xADAA47Sapped?
+Is the enemy ^xADAA47Shocked?
+Is the enemy ^xB97123Burning?
+Is the enemy ^xB97123Ignited?
+Is the enemy ^xB97123Scorched?
+Is the enemy a Boss?
+Is the enemy at Close Range?
+Is the enemy covered in Ash?
+Is the enemy covered in Frost?
+Is the enemy in RF or Scorching Ray:
+Is the enemy in a ^x3F6DB3Chilling ^7area?
+Is the enemy in the Frost Shield area?
+Is the enemy in your Link beams?
+Is the enemy marked with Signal Prey?
+Is the enemy near you Linked target?
+Is the enemy near you?
+Is the enemy on Consecrated Ground?
+Is the enemy on Full ^xE05030Life?
+Is the enemy on Fungal Ground?
+Is the enemy on Low ^xE05030Life?
+Is the enemy on Profane Ground?
+Is the enemy on ^x3F6DB3Chilled ^7Ground?
+Is the enemy on ^xADAA47Brittle ^7Ground?
+Is the enemy on ^xADAA47Sapped ^7Ground?
+Is the enemy on ^xADAA47Shocked ^7Ground?
+Is the enemy on ^xB97123Scorched ^7Ground?
+Is the skill Empowered?
+Killed a Rare or Unique enemy Recently?
+Killed a ^xADAA47Shocked ^7enemy in the last 3 Seconds?
+Killed a poisoned enemy in the last 2 Seconds?
+Killed a taunted enemy recently?
+Killed enemy affected by your DoT Recently?
+Last 25% of attached duration?
+Last 50% of attached duration?
+Lightning
+Lightning Infused?
+Lightning Skill used Recently:
+Link Skills:
+Linked To Minion?
+Lost a Non-Vaal Guard Skill buff recently?
+Lost an Endurance Charge in the past 8s?
+Manabond:
+Meat Shield:
+Minion is Leeching ^x88FFFFEnergy Shield?
+Minion is always on Full ^x88FFFFEnergy Shield?
+Missing Unreserved ^x7070FFMana^7 %:
+Molten Shell:
+Momentum:
+Moved 2m during Skill use?
+Multi-part area skills:
+No summoned Totems in the past 2 seconds?
+Number of times you've Blocked in the past 10s
+Overkill damage:
+Parry:
+Perforate:
+Physical Aegis:
+Plague Bearer:
+Power of Culled Enemy?
+Predator:
+Pride Aura Effect:
+Pride:
+Projectile Travelled through?
+Purple Flames collected:
+PvP Tvalue override (ms):
+Rage Vortex:
+Raise Spectre:
+Raise Spiders:
+Raise Zombie:
+Random element mode:
+Reaper Consumed recently?
+Repeat Mode:
+Reserved Darkness:
+Resource gain calculation mode:
+Rising Tempest:
+Ruthless Support Mode:
+Sanguimancer Demon not on Low Life:
+Scavenged Plating:
+Scorching Ray Totem stage count:
+Seconds building Stoicism:
+Seconds of chill on enemy?
+Seconds of freeze on enemy?
+Shapeshifted to animal recently?
+Shapeshifted to human recently?
+Shrapnel Ballista:
+Sigil of Power:
+Siphoning Trap:
+Skeleton ^xE05030Life:
+Skill is targeting the Branded enemy
+Source rate for Intuitive Link
+Spawned a corpse Recently?
+Spear older than 0.5s?
+Spearfield:
+Spectral Wolf:
+Stages:
+Stance Skills:
+Stance:
+State:
+Steel Shards consumed:
+Steel Skills:
+Steel Wards:
+Stoicism:
+Storm Rain of the Conduit:
+Storm Rain:
+Stunned while Casting Recently?
+Summon Companion:
+Summon Elemental Relic:
+Summon Holy Relic:
+Summon Lightning Golem:
+Summon Reaper:
+Summoned Golem in past 10 Seconds?
+Summoned Golem in past 8 Seconds?
+Summoned Spectre in past 8 Seconds?
+Summoned Zombie in past 8 Seconds?
+Taken ^xB97123Fire ^7Damage from enemy Hit Recently?
+Taunted an enemy Recently?
+Thirst for Blood:
+Time spent stationary
+Tornado Shot:
+Total Resonance Count:
+Total Spectre Life:
+Total Totem Life:
+Total Vaal Rejuvenation Totem Life:
+Total life pool of Sentinel of Radiance
+Toxic Rain:
+Trauma:
+Trinity:
+Twister gained ^x3F6DB3Cold^7 Element:
+Twister gained ^xADAA47Lightning^7 Element:
+Twister gained ^xB97123Fire^7 Element:
+Twister:
+Unbound Avatar:
+Unhinge:
+Unwilling Offering:
+Used a Warcry in the past 8 seconds?
+Vaal Molten Shell:
+Vigilant Strike:
+Voltaxic Burst:
+Vortex:
+Warcry Power:
+Warcry Skills:
+Whirlwind Buffs:
+Whirlwind Stages:
+Whirlwind gained ^x3F6DB3Cold^7 Element:
+Whirlwind gained ^xADAA47Lightning^7 Element:
+Whirlwind gained ^xB97123Fire^7 Element:
+Wind Dancer:
+^1Nothing^7
+^x3F6DB3Hoarfrost ^7Stacks
+^x88FFFFES ^7Recharge started past 2 seconds?
+^x88FFFFEnergy Shield ^7Recharge started Recently?
+^xADAA47Chill ^7Stacks
+^xADAA47Shock ^7Stacks
+^xB97123Scorch ^7Stacks
+^xE05030Life ^7regen calculation mode:
+^xFF9922Rage:

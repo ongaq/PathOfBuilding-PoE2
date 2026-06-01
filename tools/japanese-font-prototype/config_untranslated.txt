@@ -1,0 +1,57 @@
+Acolyte's Unravelling:
+Arcane Cloak:
+Aspect of the Avian:
+Aspect of the Cat:
+Aspect of the Crab:
+Aspect of the Spider:
+Barkskin:
+Bladestorm:
+Blood Sacrament:
+Carrion Golem:
+Clash Support:
+Consecrated Path of Endurance:
+Corrupting Cry:
+Cyclone:
+Dark Pact:
+Defiance:
+Demon Form:
+Doom Blast:
+Eldritch Empowerment:
+Flame Wall:
+Flicker Strike:
+Fresh Meat:
+Frost Shield:
+Greater Harbinger of Time:
+Harbinger of Time:
+Herald of Agony:
+Herald of Ash:
+Ice Nova:
+Incision Support:
+Infusion:
+Molten Shell:
+Perforate:
+Plague Bearer:
+Predator:
+Raise Spiders:
+Raise Zombie:
+Rising Tempest:
+Scavenged Plating:
+Shrapnel Ballista:
+Sigil of Power:
+Spearfield:
+Spectral Wolf:
+Storm Rain of the Conduit:
+Storm Rain:
+Summon Holy Relic:
+Summon Reaper:
+Thirst for Blood:
+Tornado Shot:
+Toxic Rain:
+Twister:
+Unhinge:
+Unwilling Offering:
+Vaal Molten Shell:
+Vigilant Strike:
+Voltaxic Burst:
+Vortex:
+Wind Dancer:
