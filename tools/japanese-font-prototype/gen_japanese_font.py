@@ -224,7 +224,7 @@ def main() -> None:
             atlas_size = 4096
         elif height >= 26:
             atlas_size = 2048
-        elif height >= 14:
+        elif height >= 12:
             atlas_size = 1024
         else:
             atlas_size = 512

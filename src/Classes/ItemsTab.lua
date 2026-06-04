@@ -3856,11 +3856,10 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode, maxWidth)
 			end
 			local header
 			if item == selItem then
-				header = "^7Removing this item from " .. compareSlot.label .. " will give you:"
+				header = "^7" .. T("Removing this item from %s will give you:"):format(T(compareSlot.label))
 			else
-				header = string.format("^7Equipping this item in %s will give you:%s",
-					compareSlot.label or compareSlot.slotName,
-					selItem and "\n(replacing " .. colorCodes[selItem.rarity] .. selItem.name .. "^7)" or "")
+				header = "^7" .. T("Equipping this item in %s will give you:"):format(T(compareSlot.label or compareSlot.slotName))
+					.. (selItem and ("\n" .. T("(replacing %s%s^7)"):format(colorCodes[selItem.rarity], T(selItem.name))) or "")
 			end
 			self.build:AddStatComparesToTooltip(tooltip, calcBase, output, header)
 		end

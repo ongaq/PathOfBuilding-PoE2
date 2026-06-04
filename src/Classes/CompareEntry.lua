@@ -520,7 +520,7 @@ function CompareEntryClass:CompareStatList(tooltip, statList, actor, baseOutput,
 						valStr = number:gsub("0+$", ""):gsub("%.$", "") .. suffix
 					end
 					valStr = formatNumSep(valStr)
-					local line = s_format("%s%s %s", color, valStr, statData.label)
+					local line = s_format("%s%s %s", color, valStr, T(statData.label))
 					if statData.compPercent and statVal1 ~= 0 and statVal2 ~= 0 then
 						local pc = statVal1 / statVal2 * 100 - 100
 						line = line .. s_format(" (%+.1f%%)", pc)
