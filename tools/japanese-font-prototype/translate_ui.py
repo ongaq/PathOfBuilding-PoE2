@@ -115,11 +115,11 @@ TERMS: dict[str, str] = {
     "Dodge Chance": "回避率",
     "Spell Ddg. Chance": "呪文回避率",
     "Spell Dodge Chance": "呪文回避率",
-    "Deflection": "そらし",
-    "Deflect Effect": "そらし効果",
-    "Deflect": "そらし",
-    "Eva. as Deflection": "回避→そらし変換",
-    "Arm. as Deflection": "アーマー→そらし変換",
+    "Deflection": "受け流し",
+    "Deflect Effect": "受け流し効果",
+    "Deflect": "受け流し",
+    "Eva. as Deflection": "回避→受け流し変換",
+    "Arm. as Deflection": "アーマー→受け流し変換",
     "Inc. Effect": "効果増加",
     "Inc. Duration": "持続時間増加",
     "Inc. Charges Gain": "チャージ獲得増加",
@@ -227,8 +227,8 @@ TERMS: dict[str, str] = {
     "Evasion Rating": "回避レーティング",
 
     # その他防御関連
-    "Eva. as Deflection": "回避→そらし",
-    "Arm. as Deflection": "アーマー→そらし",
+    "Eva. as Deflection": "回避→受け流し",
+    "Arm. as Deflection": "アーマー→受け流し",
 
     # 状態異常
     "Frozen": "凍結",
@@ -430,7 +430,7 @@ EXACT: dict[str, str] = {
     "Energy Shield:": "エナジーシールド:",
     "Block:": "ブロック:",
     "Dodge:": "回避:",
-    "Deflection:": "そらし:",
+    "Deflection:": "受け流し:",
     "Flasks:": "フラスコ:",
     "Charges:": "チャージ:",
     "Charms:": "チャーム:",
@@ -485,9 +485,9 @@ EXACT: dict[str, str] = {
     "Dodge Chance:": "回避率:",
     "Spell Ddg. Chance:": "呪文回避率:",
     "Taken From Block:": "ブロックからの被害:",
-    "Eva. as Deflection:": "回避→そらし変換:",
-    "Arm. as Deflection:": "アーマー→そらし変換:",
-    "Deflect Effect:": "そらし効果:",
+    "Eva. as Deflection:": "回避→受け流し変換:",
+    "Arm. as Deflection:": "アーマー→受け流し変換:",
+    "Deflect Effect:": "受け流し効果:",
 
     # Flask sub-labels
     "Inc. Effect:": "効果増加:",

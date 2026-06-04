@@ -105,6 +105,7 @@ Elegant Hubris:
 Embrace Madness:
 Enter name for this passive tree:
 Enter passive tree link:
+Eye of Winter:
 Flame Wall:
 Flicker Strike:
 Fork Count
@@ -187,6 +188,7 @@ Spear older than 0.5s?
 Spear older than 0.5s?:
 Spearfield:
 Spectral Wolf:
+Spiraling Conspiracy:
 Stages:
 Stance:
 State:
