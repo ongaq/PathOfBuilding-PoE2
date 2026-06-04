@@ -213,10 +213,18 @@ def main() -> None:
 
     sections: list[tuple[int, list[dict]]] = []
     for height in FONT_SIZES:
-        # アトラスサイズは経験則: 1024でほぼ常用漢字までカバー可、大サイズは2048
-        if height >= 48:
+        # アトラスサイズ: 1500 グリフ規模を想定して各サイズで十分余裕を取る
+        # 経験則:
+        #   HEIGHT 10/12: 1500 グリフ × 約12px幅 → 18000px → 512px だと 35行 = 余裕
+        #   HEIGHT 14: 14px幅で 1500 → 21000px → 512だと厳しい (実測 OOM) → 1024
+        #   HEIGHT 16-28: 1024 で十分か中サイズ境界。28 でも OOM 報告あり → 2048
+        #   HEIGHT 32-: 2048 必須
+        #   HEIGHT 56/64: 2048 でも溢れる場合あり → 4096 (GL_MAX_TEXTURE_SIZE 要確認)
+        if height >= 56:
+            atlas_size = 4096
+        elif height >= 26:
             atlas_size = 2048
-        elif height >= 16:
+        elif height >= 14:
             atlas_size = 1024
         else:
             atlas_size = 512
