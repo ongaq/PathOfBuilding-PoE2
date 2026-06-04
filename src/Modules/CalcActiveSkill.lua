@@ -751,6 +751,9 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 
 	-- Add extra modifiers from granted effect level
 	local level = activeEffect.grantedEffectLevel
+	if level.reservationMultiplier then
+		skillModList:NewMod("ReservationMultiplier", "MORE", level.reservationMultiplier, activeGrantedEffect.modSource)
+	end
 	activeSkill.skillData.CritChance = level.critChance
 	if level.damageMultiplier then
 		skillModList:NewMod("Damage", "MORE", level.damageMultiplier, activeEffect.grantedEffect.modSource, ModFlag.Attack)
@@ -930,7 +933,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 				minion.weaponData1 = {
 					type = minion.minionData.weaponType1 or "None",
 					AttackRate = 1 / attackTime,
-					CritChance = 5,
+					CritChance = minion.minionData.critChance,
 					PhysicalMin = round(damage * (1 - minion.minionData.damageSpread)),
 					PhysicalMax = round(damage * (1 + minion.minionData.damageSpread)),
 					range = minion.minionData.attackRange,
