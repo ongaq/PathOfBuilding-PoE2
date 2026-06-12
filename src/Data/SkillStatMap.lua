@@ -587,7 +587,7 @@ return {
 	mod("CooldownRecovery", "MORE", nil),
 },
 ["support_cooldown_reduction_cooldown_recovery_+%"] = {
-	mod("CooldownRecovery", "MORE", nil),
+	mod("CooldownRecovery", "INC", nil),
 },
 ["additional_weapon_base_attack_time_ms"] = {
 	mod("Speed", "BASE", nil, ModFlag.Attack),
@@ -929,6 +929,15 @@ return {
 ["base_reduce_enemy_lightning_resistance_%"] = {
 	mod("LightningPenetration", "BASE", nil),
 },
+["hits_ignore_enemy_fire_resistance"] =  {
+	flag("IgnoreFireResistance")
+},
+["hits_ignore_enemy_cold_resistance"] = {
+	flag("IgnoreColdResistance")
+},
+["hits_ignore_enemy_lightning_resistance"] = {
+	flag("IgnoreLightningResistance")
+},
 ["reduce_enemy_chaos_resistance_%"] = {
 	mod("ChaosPenetration", "BASE", nil),
 },
@@ -1094,6 +1103,9 @@ return {
 },
 ["non_skill_base_all_damage_%_to_gain_as_cold"] = {
 	mod("DamageGainAsCold", "BASE", nil),
+},
+["non_skill_base_all_damage_%_to_gain_as_fire"] = {
+	mod("DamageGainAsFire", "BASE", nil),
 },
 ["non_skill_base_all_damage_%_to_gain_as_chaos"] = {
 	mod("DamageGainAsChaos", "BASE", nil),
@@ -2801,6 +2813,16 @@ return {
 -- Ice Crystal
 ["frost_wall_maximum_life"] = {
 	mod("IceCrystalLifeBase", "BASE", nil),
+},
+-- Parry
+["base_parry_buff_damage_taken_+%_final_to_apply"] = {
+	mod("DamageTaken", "MORE", nil, ModFlag.Attack, 0, { type = "GlobalEffect", effectType = "Debuff", effectName = "Parry Debuff", effectCond = "ParryActive" }, { type = "Condition", var = "Effective" }),
+	skill("parryDebuffBaseMagnitude", nil),
+	flag("CanParry"),
+},
+["base_parry_duration_ms"] = {
+	skill("parryDebuffDuration", nil),
+	div = 1000,
 },
 -- Other
 ["triggered_skill_damage_+%"] = {

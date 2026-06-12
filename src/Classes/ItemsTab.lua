@@ -49,7 +49,10 @@ local flavourLookup = {}
 for _, entry in pairs(data.flavourText) do
     if entry.name and entry.id and entry.text then
         flavourLookup[entry.name] = flavourLookup[entry.name] or {}
-        flavourLookup[entry.name][entry.id] = entry.text
+        flavourLookup[entry.name][entry.id] = {
+            text = entry.text,
+            origin = entry.origin
+        }
     end
 end
 
@@ -1729,10 +1732,22 @@ function ItemsTabClass:CopyAnointsAndAugments(newItem, copyAugments, overwrite, 
 				newItem.itemSocketCount = #newItem.sockets
 				newItem:UpdateRunes()
 			end
+
+			local validRunes = self:GetValidRunesForItem(newItem)
+
 			-- replace runes with current ones, or set to none
 			if shouldChangeAugments then
 				for i = 1, #newItem.sockets do
-					newItem.runes[i] = currentRunes[i] or "None"
+					newItem.runes[i] = "None"
+					if currentRunes[i] then
+						for _, rune in ipairs(validRunes) do
+							-- we only copy runes which fit the new item type
+							if rune.name == currentRunes[i] then
+								newItem.runes[i] = currentRunes[i]
+								break
+							end
+						end
+					end
 				end
 				newItem:UpdateRunes()
 			end
@@ -1900,11 +1915,17 @@ table.sort(runeModLines, function(a, b)
 		return a.group < b.group
 	end
 end)
--- Update rune selection controls
-function ItemsTabClass:UpdateRuneControls()
-	local item = self.displayItem
-	-- Build rune selection for item
+
+function ItemsTabClass:GetValidRunesForItem(item)
 	local runes = { }
+	local socketedItemType
+	if item.baseModList then
+		if item.baseModList:Flag(nil, "SocketedSoulCoresOnly") then
+			socketedItemType = "SoulCore"
+		elseif item.baseModList:Flag(nil, "SocketedRunesOnly") then
+			socketedItemType = "Rune"
+		end
+	end
 	for _, rune in pairs(runeModLines) do
 		local subType = item.base.subType and item.base.subType:lower()
 		local itemType = item.base.type:lower()
@@ -1926,27 +1947,42 @@ function ItemsTabClass:UpdateRuneControls()
 			end
 		end
 		if isRuneValidForSlot(rune.slot) then
-				if item.title == "Atziri's Splendour" then
-					if rune.slot == "None" or rune.type == "SoulCore" then
-						table.insert(runes, rune)
-					end
-				else
-					table.insert(runes, rune)
-				end
+			if rune.slot == "None" or not socketedItemType or rune.type == socketedItemType then
+				table.insert(runes, rune)
+			end
 		end
 	end
+	return runes
+end
+
+-- Update rune selection controls
+function ItemsTabClass:UpdateRuneControls()
+	local item = self.displayItem
+	-- Build rune selection for item
+	local runes = self:GetValidRunesForItem(item)
+	local runesUpdated = false
 
 	for i = 1, item.itemSocketCount do
 		self.controls["displayItemRune"..i].list = runes
 		if item.runes[i] then
+			local found = false
 			for j, modLine in ipairs(self.controls["displayItemRune"..i].list) do
 				if item.runes[i] == modLine.name then
 					self.controls["displayItemRune"..i].selIndex = j
+					found = true
 				end
+			end
+			if not found then
+				self.controls["displayItemRune"..i].selIndex = 1
+				item.runes[i] = "None"
+				runesUpdated = true
 			end
 		else
 			self.controls["displayItemRune"..i].selIndex = 1
 		end
+	end
+	if runesUpdated then
+		item:UpdateRunes()
 	end
 end
 
@@ -2341,11 +2377,6 @@ function ItemsTabClass:CraftItem()
 		then
 			if raritySel == 3 then
 				raritySel = 2
-			end
-		end
-		if base.base.type == "SoulCore" or base.base.type == "Rune" then
-			if raritySel == 3 or raritySel == 2 then
-				raritySel = 1
 			end
 		end
 		if base.base.type == "Transcendent Limb" then
@@ -3200,7 +3231,6 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode, maxWidth)
 	tooltip.tooltipHeader = item.rarity
 	tooltip.center = true
 	tooltip.color = rarityCode
-	self:SetTooltipHeaderInfluence(tooltip, item)
 	-- Item name
 	if item.title then
 		tooltip:AddLine(fontSizeTitle, rarityCode..item.title, "FONTIN SC")
@@ -3241,7 +3271,61 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode, maxWidth)
 	local slotNum = slot and slot.slotNum or (IsKeyDown("SHIFT") and 2 or 1)
 	local modList = item.modList or item.slotModList[slotNum]
 
-	tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F%s", base.weapon and self.build.data.weaponTypeInfo[base.type].label or base.type), "FONTIN SC")
+	-- Find matching flavour entry and extract origin ONCE
+	local itemOrigin = nil
+	local flavourText = nil
+	if item.rarity == "UNIQUE" or item.rarity == "RELIC" or item.base.type == "Transcendent Limb" then
+		if main.showFlavourText then
+			local flavourTable
+			if item.base.type == "Transcendent Limb" then
+				flavourTable = flavourLookup["Transcendent Limb"]
+			else
+				flavourTable = flavourLookup[item.title]
+			end
+			if flavourTable then
+				local flavour = nil
+
+				if item.title == "Grand Spectrum" then
+					local selectedFlavourId = nil
+					local baseName = item.baseName
+					if baseName == "Ruby" then
+						selectedFlavourId = "FourUniqueJewel1"
+					elseif baseName == "Emerald" then
+						selectedFlavourId = "FourUniqueJewel2"
+					elseif baseName == "Sapphire" then
+						selectedFlavourId = "FourUniqueJewel3"
+					end
+					if selectedFlavourId then
+						flavour = flavourTable[selectedFlavourId]
+					end
+
+				else
+					for _, text in pairs(flavourTable) do
+						flavour = text
+						break
+					end
+				end
+
+				if flavour then
+					if flavour.origin then
+						itemOrigin = flavour.origin
+					end
+					flavourText = flavour.text or flavour
+				end
+			end
+		end
+	end
+
+	-- Combine base type with origin if available
+	local typeStr = base.weapon and self.build.data.weaponTypeInfo[base.type].label or base.type
+	if itemOrigin then
+		typeStr = itemOrigin .. " " .. typeStr
+		if itemOrigin == "Vaal" then
+			item.mutated = true
+		end
+	end
+	self:SetTooltipHeaderInfluence(tooltip, item)
+	tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F%s", typeStr), "FONTIN SC")
 	if item.quality and item.quality > 0 then
 		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FQuality: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
 	end
@@ -3541,63 +3625,11 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode, maxWidth)
 	end
 
 	-- Show flavour text:
-	if item.rarity == "UNIQUE" or item.rarity == "RELIC" or item.base.type =="Transcendent Limb" and main.showFlavourText then
-		local flavourTable
-		if item.base.type =="Transcendent Limb" then
-			flavourTable = flavourLookup["Transcendent Limb"]
-		else
-			flavourTable = flavourLookup[item.title]
+	if flavourText then
+		for _, line in ipairs(flavourText) do
+			tooltip:AddLine(fontSizeBig, colorCodes.UNIQUE .. line, "FONTIN SC ITALIC")
 		end
-		if flavourTable then
-			local flavour = nil
-
-			if item.title == "Sekhema's Resolve" then
-				local selectedFlavourId = nil
-				for _, lineEntry in ipairs(tooltip.lines or {}) do
-					local lineText = lineEntry.text or ""
-					if lineText:find("Emerald") then
-						selectedFlavourId = "FourUniqueSanctum4a"
-						break
-					elseif lineText:find("Sapphire") then
-						selectedFlavourId = "FourUniqueSanctum4b"
-						break
-					elseif lineText:find("Ruby") then
-						selectedFlavourId = "FourUniqueSanctum4c"
-						break
-					end
-				end
-				if selectedFlavourId then
-					flavour = flavourTable[selectedFlavourId]
-				end
-
-			elseif item.title == "Grand Spectrum" then
-				local selectedFlavourId = nil
-				local baseName = item.baseName
-				if baseName == "Ruby" then
-					selectedFlavourId = "FourUniqueJewel1"
-				elseif baseName == "Emerald" then
-					selectedFlavourId = "FourUniqueJewel2"
-				elseif baseName == "Sapphire" then
-					selectedFlavourId = "FourUniqueJewel3"
-				end
-				if selectedFlavourId then
-					flavour = flavourTable[selectedFlavourId]
-				end
-
-			else
-				for _, text in pairs(flavourTable) do
-					flavour = text
-					break
-				end
-			end
-
-			if flavour then
-				for _, line in ipairs(flavour) do
-					tooltip:AddLine(fontSizeBig, colorCodes.UNIQUE .. line, "FONTIN SC ITALIC")
-				end
-				tooltip:AddSeparator(14)
-			end
-		end
+		tooltip:AddSeparator(14)
 	end
 
 	-- Stat differences

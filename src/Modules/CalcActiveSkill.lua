@@ -660,7 +660,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 			skillModList:NewMod("Damage", "MORE", -100 * activeSkill.actor.minionData.damageFixup, "Damage Fixup", ModFlag.Attack)
 			skillModList:NewMod("Speed", "MORE", 100 * activeSkill.actor.minionData.damageFixup, "Damage Fixup", ModFlag.Attack)
 		elseif activeSkill.actor.minionData.damage ~= 1 then
-			skillModList:NewMod("Damage", "MORE", (activeSkill.actor.minionData.damage - 1) * 100, activeSkill.actor.minionData.name .." Damage Multiplier", ModFlag.Attack)
+			skillModList:NewMod("AddedDamage", "MORE", (activeSkill.actor.minionData.damage - 1) * 100, activeSkill.actor.minionData.name .." Damage Multiplier", ModFlag.Attack, { type = "SkillName", skillNameList = { "Spectre", "Companion" }, partialMatch = true, summonSkill = true, neg = true })
 		end
 	end
 	if skillModList:Flag(activeSkill.skillCfg, "DisableSkill") and not skillModList:Flag(activeSkill.skillCfg, "EnableSkill") then
@@ -826,7 +826,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	end
 
 	-- Hollow Palm Technique added phys for skills that would use Quarterstaff
-	if activeSkill.actor.modDB.conditions.HollowPalm and ((activeEffect.grantedEffect.weaponTypes and activeEffect.grantedEffect.weaponTypes.Staff) or skillModList:Flag(activeSkill.skillCfg, "UseHollowPalmDamage")) then
+	if activeSkill.actor.modDB.conditions.HollowPalm and not (skillModList:Flag(nil, "UseFacebreakerItemDamage") and activeEffect.grantedEffect.weaponTypes and activeEffect.grantedEffect.weaponTypes["One Hand Mace"]) and ((activeEffect.grantedEffect.weaponTypes and activeEffect.grantedEffect.weaponTypes.Staff) or skillModList:Flag(activeSkill.skillCfg, "UseHollowPalmDamage")) then
 		local gemLevel = activeEffect.level
 		local physMin = data.hollowPalmAddedPhys[gemLevel and gemLevel or 1][1]
 		local physMax = data.hollowPalmAddedPhys[gemLevel and gemLevel or 1][2]
@@ -905,7 +905,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 			local attackTime = minion.minionData.attackTime
 			local damageTable = (monsterDamage or minion.minionData.hostile) and env.data.monsterDamageTable or env.data.monsterAllyDamageTable
 			minion.hiddenDamageFixup = monsterDamage and (round(env.data.monsterAllyDamageTable[minion.level] / damageTable[minion.level] * data.misc.SpectreBeastDamageFixup, 2) - 1) or 0
-			local damage = damageTable[minion.level]
+			local damage = floor(damageTable[minion.level]) * minion.minionData.damage
 			if not minion.minionData.baseDamageIgnoresAttackSpeed then -- minions with this flag do not factor attack time into their base damage
 				 damage = damage * attackTime
 			end
@@ -934,8 +934,8 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 					type = minion.minionData.weaponType1 or "None",
 					AttackRate = 1 / attackTime,
 					CritChance = minion.minionData.critChance,
-					PhysicalMin = round(damage * (1 - minion.minionData.damageSpread)),
-					PhysicalMax = round(damage * (1 + minion.minionData.damageSpread)),
+					PhysicalMin = floor(damage * (1 - minion.minionData.damageSpread)),
+					PhysicalMax = floor(damage * (1 + minion.minionData.damageSpread)),
 					range = minion.minionData.attackRange,
 				}
 			end
