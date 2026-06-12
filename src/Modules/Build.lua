@@ -147,7 +147,7 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild, importLin
 		DrawImage(nil, x + 92, y + 1, self.strWidth + 4, 18)
 		SetDrawColor(1, 1, 1)
 		SetViewport(x, y + 2, self.strWidth + 94, 16)
-		DrawString(0, 0, "LEFT", 16, "VAR", "Current build:  "..self.buildName)
+		DrawString(0, 0, "LEFT", 16, "VAR", T("Current build:").."  "..self.buildName)
 		SetViewport()
 		if control:IsMouseInBounds() then
 			SetDrawLayer(nil, 10)
@@ -2282,7 +2282,7 @@ function buildMode:CompareStatList(tooltip, statList, actor, baseOutput, compare
 
 				valStr = formatNumSep(valStr)
 
-				local line = s_format("%s%s %s", color, valStr, statData.label)
+				local line = s_format("%s%s %s", color, valStr, T(statData.label))
 				local pcPerPt = ""
 				if statData.compPercent and statVal1 ~= 0 and statVal2 ~= 0 then
 					local pc = statVal1 / statVal2 * 100 - 100
@@ -2292,7 +2292,7 @@ function buildMode:CompareStatList(tooltip, statList, actor, baseOutput, compare
 					end
 				end
 				if nodeCount then
-					line = line .. s_format(" ^8[%+"..statData.fmt.."%s per point]", diff * ((statData.pc or statData.mod) and 100 or 1) / nodeCount, pcPerPt)
+					line = line .. s_format(" ^8[%+"..statData.fmt.."%s "..T("per point").."]", diff * ((statData.pc or statData.mod) and 100 or 1) / nodeCount, pcPerPt)
 				end
 				tooltip:AddLine(14, line)
 				count = count + 1
@@ -2308,11 +2308,11 @@ end
 function buildMode:AddStatComparesToTooltip(tooltip, baseOutput, compareOutput, header, nodeCount)
 	local count = 0
 	if self.calcsTab.mainEnv.player.mainSkill.minion and baseOutput.Minion and compareOutput.Minion then
-		count = count + self:CompareStatList(tooltip, self.minionDisplayStats, self.calcsTab.mainEnv.minion, baseOutput.Minion, compareOutput.Minion, header.."\n^7Minion:", nodeCount)
+		count = count + self:CompareStatList(tooltip, self.minionDisplayStats, self.calcsTab.mainEnv.minion, baseOutput.Minion, compareOutput.Minion, header.."\n^7"..T("Minion:"), nodeCount)
 		if count > 0 then
-			header = "^7Player:"
+			header = "^7" .. T("Player:")
 		else
-			header = header.."\n^7Player:"
+			header = header.."\n^7"..T("Player:")
 		end
 	end
 	count = count + self:CompareStatList(tooltip, self.displayStats, self.calcsTab.mainEnv.player, baseOutput, compareOutput, header, nodeCount)

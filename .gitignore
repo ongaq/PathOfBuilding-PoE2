@@ -2,6 +2,7 @@
 .idea/
 .vs/
 .vscode/
+.claude/
 *.code-workspace
 inspect.lua
 
@@ -43,5 +44,6 @@ src/Data/TimelessJewelData/*.bin
 # Simplegraphic Debugging
 runtime/imgui.ini
 
-
 src/poe_api_response.json
+
+temp/

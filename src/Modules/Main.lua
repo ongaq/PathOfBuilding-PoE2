@@ -16,6 +16,7 @@ local m_pi = math.pi
 
 LoadModule("GameVersions")
 LoadModule("Modules/Common")
+localization = LoadModule("Modules/Localization")
 LoadModule("Modules/CalcFormat")
 LoadModule("Modules/Data")
 LoadModule("Modules/ModTools")
@@ -51,6 +52,9 @@ main = new("ControlHost")
 
 function main:Init()
 	self:DetectUnicodeSupport()
+	-- i18n初期化（言語は LoadSettings で上書きされる）
+	self.language = "en"
+	localization:Init()
 	self.modes = { }
 	self.modes["LIST"] = LoadModule("Modules/BuildList")
 	self.modes["BUILD"] = LoadModule("Modules/Build")
@@ -571,6 +575,10 @@ function main:LoadSettings(ignoreBuild)
 				if node.attrib.buildSortMode then
 					self.buildSortMode = node.attrib.buildSortMode
 				end
+				if node.attrib.language then
+					self.language = node.attrib.language
+					localization:SetLanguage(self.language)
+				end
 				launch.connectionProtocol = tonumber(node.attrib.connectionProtocol)
 				launch.proxyURL = node.attrib.proxyURL
 				if node.attrib.buildPath then
@@ -769,6 +777,7 @@ function main:SaveSettings()
 	t_insert(setXML, sharedItemList)
 	t_insert(setXML, { elem = "Misc", attrib = {
 		buildSortMode = self.buildSortMode,
+		language = self.language,
 		connectionProtocol = tostring(launch.connectionProtocol),
 		proxyURL = launch.proxyURL,
 		buildPath = (self.buildPath ~= self.defaultBuildPath and self.buildPath or nil),
@@ -881,7 +890,8 @@ function main:OpenOptionsPopup(savedState)
 		showFlavourText = self.showFlavourText,
 		showAnimations = self.showAnimations,
 		showAllItemAffixes = self.showAllItemAffixes,
-		dpiScaleOverridePercent = self.dpiScaleOverridePercent
+		dpiScaleOverridePercent = self.dpiScaleOverridePercent,
+		language = self.language,
 	}
 
 	-- NOTE: Height needs to be adjusted if more menu options are added
@@ -969,6 +979,20 @@ function main:OpenOptionsPopup(savedState)
 	controls.dpiScaleOverrideLabel = new("LabelControl", { "RIGHT", controls.dpiScaleOverride, "LEFT" }, { defaultLabelSpacingPx, 0, 0, 16 }, "^7UI scaling override:")
 	controls.dpiScaleOverride.tooltipText = "Overrides Windows DPI scaling inside Path of Building.\nChoose a percentage between 100% and 250% or revert to the system default."
 	controls.dpiScaleOverride:SelByValue(self.dpiScaleOverridePercent, "percent")
+
+	-- 言語切替（i18n）
+	nextRow()
+	local languageOptions = { }
+	for _, lang in ipairs(localization.available) do
+		t_insert(languageOptions, { label = lang.display, code = lang.code })
+	end
+	controls.language = new("DropDownControl", { "TOPLEFT", controls.sectionAnchor, "TOPLEFT" }, { currentX + defaultLabelPlacementX, currentY, 150, 18 }, languageOptions, function(index, value)
+		self.language = value.code
+		localization:SetLanguage(value.code)
+	end)
+	controls.languageLabel = new("LabelControl", { "RIGHT", controls.language, "LEFT" }, { defaultLabelSpacingPx, 0, 0, 16 }, "^7Language:")
+	controls.language.tooltipText = "UI 表示言語。変更は再起動またはビルドを開き直した時に反映されます。\nアイテム名・スキル名・mod は意図的に英語のまま維持されます。"
+	controls.language:SelByValue(self.language, "code")
 
 	nextRow()
 	controls.buildPath = new("EditControl", { "TOPLEFT", controls.sectionAnchor, "TOPLEFT" }, { currentX + defaultLabelPlacementX, currentY, 290, 18 })
@@ -1232,6 +1256,8 @@ function main:OpenOptionsPopup(savedState)
 		self.showAllItemAffixes = savedState.showAllItemAffixes
 		self.dpiScaleOverridePercent = savedState.dpiScaleOverridePercent
 		SetDPIScaleOverridePercent(self.dpiScaleOverridePercent)
+		self.language = savedState.language
+		localization:SetLanguage(self.language)
 		main:ClosePopup()
 	end)
 	

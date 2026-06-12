@@ -1,0 +1,760 @@
+  
+    
+ ^7Custom:
+# 
+% to not Consume
++1 to Gem Level
+-- Select Metric --
+-1 to Gem Level
+...
+2 Add. Proj. Chance
+<No skills added yet>
+Accuracy
+Active Brand Limit
+Active Mine Limit
+Active Mines
+Active Minion Limit
+Active Skill
+Active Totem Limit
+Active Trap Limit
+Add
+Added Max
+Added Min
+Aegis
+Ahuana (Immortal Ambition)
+Ailment Threshold
+Ailment modifiers
+Akoya (Chainbreaker)
+All
+Allocate
+Amulet
+Anc. Empowerment
+Ancestral Call
+Ancestral Cry
+AncestralEmpower+
+Any
+Area Damage
+Area of Effect Mod
+Area of Effect modifiers
+Arm. as Deflection
+Armour
+Armour Break / hit
+Armour Defense
+Asenath (Dance with Death)
+Attachment Range
+Attack time
+Attack/Cast Rate
+Attacks per second
+Attributes
+Aura Duration
+Aura Effect Mod
+Aura Uptime
+Aura and Buff Skills
+Aura/Buff Skills
+Avarius (Power of Purpose)
+Average Bleed Roll
+Average Damage
+Average Hit
+Average Ignite Roll
+Average Poison Roll
+Avg. Active Traps
+Avg. Mines per Throw
+Avg. Traps per Throw
+Avoid All Dmg Ch.
+Avoid Chaos Chance
+Avoid Cold Chance
+Avoid Fire Chance
+Avoid Lightning Ch.
+Avoid Physical Ch.
+Avoid Proj Ch.
+Awakened Maximum
+BOTTOM
+BOTTOMLEFT
+Balbala (The Traitor)
+Base from Armours
+Base from Gear
+Battlemage's Cry
+Beast Library
+Belt
+Bleed
+Bleed Avoid Ch.
+Bleed DPS
+Bleed Duration
+Bleed Effect
+Blind Avoid Ch.
+Blind Duration
+Block
+Block Chance
+Block Chance Reduction
+Block Stun Duration
+Body Armour
+Bolt Count
+Boosted Attacks
+Boots
+Bounces Count
+Brand Damage
+Brittle Avoid Ch.
+Brittle Duration
+Brittle Effect
+Brittle Effect Mod
+Brutal Restraint
+Buffed
+Burning Ground
+Burst Damage
+CWDT Threshold
+Cadiro (Supreme Decadence)
+Calculation Mode
+Cancel
+Caspiro (Supreme Ostentation)
+Cast Time
+Cast time
+Casts per second
+Caustic Ground
+Chance to Bleed
+Chance to Blind
+Chance to Brittle
+Chance to Daze
+Chance to Explode
+Chance to Freeze
+Chance to Hit
+Chance to Ignite
+Chance to Poison
+Chance to Rearm
+Chance to Sap
+Chance to Scorch
+Chance to Shock
+Channel time
+Channelling Damage
+Chaos Gain/Flame
+Chaos Recoup
+Chaos Resist
+Chaos Taken as
+Charge on crit %
+Charges
+Charges/s
+Charm Limit
+Charms
+Chill Avoid Ch.
+Chill Duration
+Chill Effect
+Chill Effect Mod
+Close
+Cold Recoup
+Cold Resist
+Cold Taken as
+Combat Buffs
+Combined DPS
+Configured Brittle
+Configured Chill
+Configured Sap
+Configured Scorch
+Configured Shock
+Conversions
+Convert
+Copy
+Copy + Convert
+Copy Config from Compare Build
+Copy Next Trade URL
+Copy Trade URL
+Corpse Level
+Corpse Life
+Corr Blood Immune
+Corrupted
+Corrupted Maximum
+Create
+Crit Chance
+Crit Effect Mod
+Crit Impale Chance
+Crit Multiplier
+Crit Reduction
+Crits
+Culling Strike
+Current
+Current Brittle
+Current Chill
+Current Sap
+Current Scorch
+Current Shock
+Curse Avoid Ch.
+Curse Delay
+Curse Effect Mod
+Curse Effect on You
+Curse Limit
+Curses and Debuffs
+Curses/Debuffs
+Custom
+DPS Multiplier
+Damage Avoidance
+Damage Mod.
+Damage Taken
+Damage over Time
+Damaging Hits
+Debuff Dur. Mult.
+Decay
+Decay DPS
+Decay Duration
+Default
+Defences from Shield
+Deflect Chance
+Deflect Effect
+Deflection
+Deflection Rating
+Degens
+Desecrated
+Detonation Time
+Dex. Required
+Dexterity
+Dmg. Mit. Regen
+Dmg. of all Bleeds
+Dmg. of all Ignites
+Dmg. of all Poisons
+DoT DPS
+DoT taken
+Dodge
+Dodge Chance
+Dominus (Inner Conviction)
+Don't Save
+Done
+Doryani (Corrupted Soul)
+Dots and Build Degens
+Duration
+Duration Mod
+Duration of Curses
+ES % per second
+ES Bypass %
+ES Cost
+ES Gain Rate
+ES Gain on Kill
+ES Gain per Hit
+ES Leech Cap
+ES Leech Rate
+ES Leech per Hit
+ES on Block
+ES on Spell Block
+ES on Suppression
+ES per second
+Eff. Bolt Count
+Eff. Reload Time
+Eff. Source Rate
+Effect of Blind
+Effect of Chill
+Effect of Elusive
+Effect of non-Damaging Ailments
+Effective DPS
+Effective DPS Mod
+Effective DPS modifier:
+Effective DoT Pool
+Effective Hit Pool
+Effective \
+Ele Recoup
+Electrocute Buildup
+Elegant Hubris
+Elemental Ailment Duration
+Elemental Damage
+Elemental Resistances
+Empowered Attacks
+Empowered Stats
+Endurance
+Enemy Ail. Thresh.
+Enemy Block
+Enemy Conversion modifiers
+Enemy Damage
+Enemy Degens
+Enemy ES Recovery
+Enemy Evasion modifiers
+Enemy Life Recovery
+Enemy Mana Recovery
+Enemy PvP Multiplier
+Enemy miss chance
+Enemy modifiers
+Energy Shield
+Essence
+Eva. as Deflection
+Evade Chance
+Evasion
+Explosions /s
+Exposure Effect
+Faster Recoup
+FasterRecoup
+Fire Recoup
+Fire Resist
+Fire Taken as
+Firing Rate
+Fist of War
+Flasks
+Fork Count
+Freeze Avoid Ch.
+Freeze Buildup
+Freeze Duration
+Freeze Effect
+Frenzy
+Frost Shield
+Full DPS
+Gem Level
+Gem Req Mod
+Generic Flask Charges/s
+Generic Flask Effect
+Generic Flask Recovery Rate
+Global Base
+Glorious Vanity
+Gloves
+Guaranteed Brittles
+Guaranteed Chills
+Guaranteed Saps
+Guaranteed Scorches
+Guaranteed Shocks
+Guard
+Helmet
+Hinder Immune
+Hit DPS
+Hit Over Time Avg.
+Hit Over Time Max.
+Hit Rate
+Hit taken
+Hit taken Mult.
+Hits before death
+IIQ for Normal Mobs
+IIR for Magic Mobs
+Ice Crystal Life
+Ignite
+Ignite Avoid Ch.
+Ignite DPS
+Ignite Duration
+Ignite Effect
+Impale
+Impale Avoid Ch.
+Impale Chance
+Impale DPS
+Impale Damage
+Import
+Import Tree
+Import from Folder
+In Combat
+Inc. Cast Speed
+Inc. Charges Gain
+Inc. Charges Used
+Inc. Crit Chance
+Inc. Duration
+Inc. Effect
+Inc. Item Quantity
+Inc. Item Rarity
+Inc. Magic Effect
+Inc. Quiver Effect
+Inc. Recovery
+Inc. Recovery Rate
+Inc. Reload Speed
+Inc. from Tree
+Increased Energy Shield Recovery
+Increased Energy Shield Regeneration Rate
+Increased Life Recovery
+Increased Life Regeneration Rate
+Increased Mana Recovery
+Increased Rage Regeneration Rate
+Infernal Cry
+Inherent Rage Loss
+Int. Required
+Intelligence
+Interrupt Avoid Ch.
+Intimidating Cry
+Item Req Mod
+Kaom (Strength of Blood)
+Knockback Chance
+Knockback Dist.
+Knockback Immune
+LEFT
+Leech & Gain on Hit
+Leech Conversion
+Lethal Pride
+Life
+Life % Cost
+Life % per second
+Life Cost
+Life Flask Charges/s
+Life Flask Recovery Rate
+Life Flasks
+Life Gain Rate
+Life Gain on Kill
+Life Gain per Hit
+Life Leech Cap
+Life Leech Rate
+Life Leech per Hit
+Life Leech/Flame
+Life Reserve Mod
+Life on Block
+Life on Suppression
+Life per Remnant
+Life per second
+Light Radius Mod
+Light Recoup
+Lightning Resist
+Lightning Taken as
+Lineage
+Link Effect Mod
+MH Accuracy
+MH Att. per second
+MH Average Hit
+MH Chance to Hit
+MH Crit Bifurcates
+MH Crit Chance
+MH Crit Effect Mod
+MH Crit Multiplier
+MH DMG Mod.
+MH Eff. DPS Mod
+MH Hit Damage
+MH Impale Chance
+MH Inc. Att. Speed
+MH Inc. Crit Chance
+MH K.B. Chance
+MH K.B. Dist.
+MH More Att. Speed
+MH PvP Average Hit
+MH Source Chaos
+MH Source Cold
+MH Source Fire
+MH Source Lightning
+MH Source Physical
+MH Stored Damage
+MH Stun Duration
+MH Stun Threshold
+MH Total Increased
+MH Total More
+MS While Casting
+Magic Utility Flask Effect
+Magnitude Effect
+Maim Immune
+Main Hand
+Main hand modifiers
+Mana
+Mana % Cost
+Mana % per second
+Mana Cost
+Mana Flask Charges/s
+Mana Flask Recovery Rate
+Mana Flasks
+Mana Gain Rate
+Mana Gain on Kill
+Mana Gain per Hit
+Mana Leech Cap
+Mana Leech Rate
+Mana Leech per Hit
+Mana Leech/Flame
+Mana Regen
+Mana Reserve Mod
+Mana on Block
+Mana per Remnant
+Mana per second
+Manual
+Mark Effect Mod
+Mark Limit
+Match Character Level
+Max
+Max Bleed Stacks
+Max Chain Count
+Max Ignite Stacks
+Max Impale Stacks
+Max Poison Stacks
+Max Sust. Fuses
+Maxarius (Transcendence)
+Maximum Brittle
+Maximum Chill
+Maximum Hit Taken
+Maximum Rage
+Maximum Sap
+Maximum Scorch
+Maximum Shock
+Melee Evade Ch.
+Militant Faith
+Mind over Matter %
+Mine Aura Radius
+Mine Deton. Radius
+Mine Throw Rate
+Mine Throw Time
+Minion
+Minion Attack and Cast Speed
+Minion Revival Time
+Minion Skill
+Minion Skill Stat Set
+Minions Accuracy Rating
+Mitigated hits
+More Cast Speed
+More Energy Shield Recovery
+More Energy Shield Regeneration Rate
+More Life Recovery
+More Life Regeneration Rate
+More Mana Recovery
+More Rage Regeneration Rate
+More Recovery
+More Reload Speed
+Movement Speed
+Nasima (Second Sight)
+Net Avg.
+Net ES Recovery
+Net Life Recovery
+Net Mana Recovery
+Net Max.
+No Ammo Consume
+Non-Curse Aura Effect
+Non-Damaging Ailments
+Non-Lineage
+None
+Normal Hits/Cast
+Normal Maximum
+Not Corrupted
+OH Accuracy
+OH Att. per second
+OH Average Hit
+OH Chance to Hit
+OH Crit Bifurcates
+OH Crit Chance
+OH Crit Effect Mod
+OH Crit Multiplier
+OH DMG Mod.
+OH Eff. DPS Mod
+OH Hit Damage
+OH Impale Chance
+OH Inc. Att. Speed
+OH Inc. Crit Chance
+OH K.B. Chance
+OH K.B. Dist.
+OH More Att. Speed
+OH PvP Average Hit
+OH Source Chaos
+OH Source Cold
+OH Source Fire
+OH Source Lightning
+OH Source Physical
+OH Stored Damage
+OH Stun Duration
+OH Stun Threshold
+OH Total Increased
+OH Total More
+Off Hand
+Off hand modifiers
+Other Ailment Defences
+Other Avoidance
+Other Defences
+Other Effects
+Overlap Chance
+Override
+Perfect Timing
+Phys Recoup
+Phys. Dmg. Reduct
+Physical Taken as
+Pierce Count
+Pin Buildup
+Player modifiers
+Poison
+Poison Avoid Ch.
+Poison DPS
+Poison Duration
+Poison Effect
+Power
+Prefix
+Presence Mod
+Presence Radius
+Prevented Life Loss
+Primalist
+Proj. Evade Ch.
+Proj. Speed Mod
+Projectile Count
+Pulses Per Trap
+PvP Average Dmg
+PvP Hit taken
+PvP Multiplier
+Quantity Multiplier
+RIGHT
+Radius
+Rage
+Rage Cost
+Rage Effect
+Rage Loss Delay
+Rage per second
+Rakiata (Tempered by War)
+Rallying Cry
+Recharge Delay
+Recharge Rate
+Recoup
+Recoup Avg.
+Recoup Max.
+Recoup and Hit Taken Over Time
+Recovery
+Recovery modifiers
+Reflect taken
+Reload Time
+Remnant Effect Mod
+Repeat Count
+Reserve Duration
+Reserve Uptime
+Reserved
+Reset
+Resists
+Resolving PoEURL link...
+Ring 1
+Ring 2
+Ring 3
+Sap Avoid Ch.
+Sap Duration
+Sap Effect
+Sap Effect Mod
+Save
+Scorch Avoid Ch.
+Scorch Duration
+Scorch Effect
+Scorch Effect Mod
+Seal Gain Rate
+Search
+Secondary Duration
+Secondary Radius
+Secondary Uptime
+Seismic Cry
+Self hit Damage
+Shock Avoid Ch.
+Shock Duration
+Shock Effect
+Shock Effect Mod
+Shock Stacks
+Show Minion Stats
+Shrink with PoEURL
+Shrinking...
+Silence Avoid Ch.
+Skill Average Hit
+Skill Cooldown
+Skill Cost
+Skill DPS
+Skill Damage over Time
+Skill DoT DPS
+Skill Duration
+Skill Hit Damage
+Skill Part
+Skill PvP Average Hit
+Skill PvP DPS
+Skill Stages
+Skill Trigger Rate
+Skill type-specific Stats
+Small Explosions
+Socket #
+Socket Group
+Sort by 
+Soul Cost
+Soul Gain Prevent.
+Soul Link
+Source Chaos
+Source Cold
+Source Fire
+Source Lightning
+Source Physical
+Sources
+Spectre Ally
+Spectre Library
+Spell Ddg. Chance
+Spell Evade Ch.
+Spell Proj. Evade Ch.
+Spell Suppression
+Spendable
+Spirit
+Spirit % Cost
+Spirit Cost
+Spirit Reserve Mod
+Split Count
+Stack Potential
+Stacks on Enemy
+Stat Set
+Stored Damage
+Stored Uses
+Str. Required
+Strength
+Strike Targets
+Stun Avoid Chance
+Stun Buildup
+Stun Chance
+Stun Duration
+Stun Threshold
+Suffix
+Super Hits/Cast
+Suppression Ch.
+Suppression Effect
+Surrounded Mod
+Surrounded Radius
+Sustainable Trauma
+TOP
+TOPLEFT
+TOPRIGHT
+Taken As
+Taken From Block
+Taken as Chaos
+Taken as Cold
+Taken as Fire
+Taken as Lightning
+Taken as Physical
+Terrain Chain
+Tertiary Duration
+Tertiary Radius
+Tertiary Uptime
+Time before death
+Total
+Total 
+Total Base
+Total Degen
+Total Firing Time
+Total Increased
+Total More
+Total Multiplier
+Total Net Recovery
+Total Pool
+Total Recoverable
+Total Scorch
+Total Shock
+Totem Ally
+Totem Armour
+Totem Block Chance
+Totem Chaos Res
+Totem Cold Res
+Totem Damage
+Totem Dur. Mod
+Totem Duration
+Totem ES
+Totem Fire Res
+Totem Life
+Totem Life Mod
+Totem Light. Res
+Totem Place Time
+Totem modifiers
+Trap Cooldown
+Trap Throw Rate
+Trap Throw Time
+Trap Trigg. Radius
+Trigger Rate Cap
+Tvalue Override (ms)
+Unbuffed
+Unmitigated %
+Unreserved
+Uptime
+Utility Flask Charges/s
+Utility Flasks
+Vaal Rejuv. Totem
+Victario (Supreme Grandstanding)
+View Skill Details
+Warcry Effect Mod
+Warden
+Warlock
+Wave Pulse Rate
+Weap. Swap Speed
+Weapon 1
+Weapon 1 (Swap)
+Weapon 2
+Weapon 2 (Swap)
+Weapon Range
+Weapon Req Mod
+Wither Effect
+Xibaqua (Divine Flesh)
+\n
+^1
+^1Error fetching league list, default league will be used\n
+^4Fallback Nodes
+^7
+^7---------------------------
+^7---------------------------\n
+^7Fallback Nodes
+^7Required
+^7Secondary Node Weight:
+^9Secondary Node Weight:

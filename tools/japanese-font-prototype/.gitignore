@@ -1,0 +1,4 @@
+# 生成物（再現可能）はコミット対象外
+output/*.tga
+output/*.tgf
+output/_sample_*.png

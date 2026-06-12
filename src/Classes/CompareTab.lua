@@ -3919,9 +3919,10 @@ function CompareTabClass:DrawItems(vp, compareEntry, inputEvents)
 			local slotLabel = pSlot and pSlot.label or hoverEquipSlotName
 			local header
 			if selItem then
-				header = string.format("^7Equipping this item in %s will give you:\n(replacing %s%s^7)", slotLabel, colorCodes[selItem.rarity] or "^7", selItem.name)
+				header = "^7" .. T("Equipping this item in %s will give you:"):format(T(slotLabel))
+					.. "\n" .. T("(replacing %s%s^7)"):format(colorCodes[selItem.rarity] or "^7", T(selItem.name))
 			else
-				header = string.format("^7Equipping this item in %s will give you:", slotLabel)
+				header = "^7" .. T("Equipping this item in %s will give you:"):format(T(slotLabel))
 			end
 			local count = self.primaryBuild:AddStatComparesToTooltip(self.itemTooltip, calcBase, output, header)
 			if count == 0 then
