@@ -2272,7 +2272,7 @@ return {
 	div = 1000,
 },
 ["base_spell_cast_time_ms"] = {
-	mod("TotalCastTime", "BASE", nil),
+	mod("Speed", "BASE", nil, ModFlag.Cast),
 	div = 1000,
 },
 ["active_skill_cast_speed_+%_final"] = {
@@ -2854,6 +2854,9 @@ return {
 -- Ice Crystal
 ["frost_wall_maximum_life"] = {
 	mod("IceCrystalLifeBase", "BASE", nil),
+},
+["ice_crystal_maximum_life_+%"] = {
+	mod("IceCrystalLife", "INC", nil),
 },
 -- Parry
 ["base_parry_buff_damage_taken_+%_final_to_apply"] = {
