@@ -1,3 +1,7 @@
+runtime/Path{space}of{space}Building-PoE2.exe で起動
+
+---
+
 # Path of Building 2 Community
 ## Welcome to Path of Building 2, an offline build planner for Path of Exile 2!
 
